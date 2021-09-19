@@ -3,7 +3,7 @@
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://localhost/twitterClone', {
+mongoose.connect(process.env.mongosrv, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true 
